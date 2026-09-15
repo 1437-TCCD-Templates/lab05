@@ -39,8 +39,7 @@ double class_average(const double* const* scores, const int num_students, const 
     return total / (num_students * num_assignments);
 }
 
-void find_extremes(const double* const* scores, int student_index,
-                  double& lowest, double& highest, const int num_assignments) {
+void find_extremes(const double* const* scores, int student_index, const int num_students, const int num_assignments, double& lowest, double& highest){
     // Start from a real score so the result is correct for any range of
     // values, including all-negative ones
     lowest = scores[student_index][0];
