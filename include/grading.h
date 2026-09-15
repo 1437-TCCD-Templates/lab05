@@ -52,7 +52,7 @@
  * @param[in]  scores           The grade grid.
  * @param[in]  student_index    Row of the student to examine.
  * @param[in]  num_students     Number of students in the scores grid
- * @param[in]  num_assignments  Number of assignmetns in the scores grid
+ * @param[in]  num_assignments  Number of assignments in the scores grid
  * @param[out] lowest           Receives the minimum score.
  * @param[out] highest          Receives the maximum score.
  */
@@ -67,7 +67,7 @@ void find_extremes(const double* const* scores, int student_index, const int num
  * @param[in] scores  The grade grid.
  * @param[in] target  The letter grade to count.
  * @param[in] num_students     Number of students in the scores grid
- * @param[in] num_assignments  Number of assignmetns in the scores grid
+ * @param[in] num_assignments  Number of assignments in the scores grid
  * @return The number of students whose average earns that letter.
  */
 [[nodiscard]] int count_grade(const double* const* scores, char target, const int num_students, const int num_assignments);
@@ -81,7 +81,7 @@ void find_extremes(const double* const* scores, int student_index, const int num
  * @param[in] scores        The grade grid.
  * @param[in] student_index  Row of the student to examine.
  * @param[in] num_students     Number of students in the scores grid
- * @param[in] num_assignments  Number of assignmetns in the scores grid
+ * @param[in] num_assignments  Number of assignments in the scores grid
  * @return true if any of that student's scores is 100 or above.
  */
 [[nodiscard]] bool has_perfect_score(const double* const* scores, int student_index, const int num_students, const int num_assignments);
@@ -98,7 +98,7 @@ void find_extremes(const double* const* scores, int student_index, const int num
  * @param[in] scores        The grade grid.
  * @param[in] student_index  Row of the student to examine.
  * @param[in] num_students     Number of students in the scores grid
- * @param[in] num_assignments  Number of assignmetns in the scores grid
+ * @param[in] num_assignments  Number of assignments in the scores grid
  * @return true if either at-risk condition holds.
  */
 [[nodiscard]] bool is_at_risk(const double* const* scores, int student_index, const int num_students, const int num_assignments);
