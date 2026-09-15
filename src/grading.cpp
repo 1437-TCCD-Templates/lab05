@@ -51,11 +51,11 @@ void find_extremes(const double* const* scores, int student_index, const int num
     }
 }
 
-int count_grade(const double* const* scores, char target, const int num_students) {
+int count_grade(const double* const* scores, char target, const int num_students, const int num_assignments) {
     int count{};
 
     for (auto i{0}; i < num_students; i++) {
-        if (letter_grade(student_average(scores, i, num_students)) == target) {
+        if (letter_grade(student_average(scores, i, num_assignments)) == target) {
             count++;
         }
     }

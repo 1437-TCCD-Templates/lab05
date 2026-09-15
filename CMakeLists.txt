@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 project(gradebook LANGUAGES CXX)
 
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 include(FetchContent)
 FetchContent_Declare(
     googletest
@@ -12,11 +15,6 @@ enable_testing()
 include(CTest)
 include(GoogleTest)
 add_subdirectory(tests)
-
-
-
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(library
     src/utilities.cpp

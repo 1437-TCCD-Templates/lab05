@@ -70,7 +70,7 @@ void find_extremes(const double* const* scores, int student_index, const int num
  * @param[in] num_assignments  Number of assignmetns in the scores grid
  * @return The number of students whose average earns that letter.
  */
-[[nodiscard]] int count_grade(const double* const* scores, char target, const int num_assignments);
+[[nodiscard]] int count_grade(const double* const* scores, char target, const int num_students, const int num_assignments);
 
 /**
  * @brief Reports whether a student earned a perfect score on any assignment.
